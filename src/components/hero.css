@@ -1,0 +1,136 @@
+.hero {
+  height: 56vh;
+  margin-top: 40vh;
+  text-align: center;
+}
+
+.hero h3 {
+  font-size: 35px;
+  margin: 5px;
+  padding: 2px;
+}
+
+@media only screen and (max-width: 1180px) {
+  .hero {
+    height: 47vh;
+    margin-top: 30vh;
+    padding: 0 20px 0 20px;
+  }
+
+  .hero h3 {
+    font-size: 25px;
+  }
+
+  .hero button {
+    font-size: 0.5rem;
+    padding: .5rem 1rem;
+  }
+}
+
+.wave {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+  font-size: 2.5rem;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
+/* CSS */
+.hero button {
+  margin-right: 5px;
+  margin-top: 5px;
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding: .50rem 1rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.hero button:hover {
+  background-color: #374151;
+}
+
+.hero button:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 1200px) {
+  .hero button {
+    padding: .75rem 1.5rem;
+  }
+}
+
+/* .hero {
+    width: 500px;
+    height: 500px;
+    margin-left: 30vw;
+    margin-bottom: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M882%2C642.5Q785%2C785%2C642.5%2C808.5Q500%2C832%2C341%2C825Q182%2C818%2C158.5%2C659Q135%2C500%2C158.5%2C341Q182%2C182%2C341%2C123Q500%2C64%2C647.5%2C134.5Q795%2C205%2C887%2C352.5Q979%2C500%2C882%2C642.5Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22%23f7457c%22 d=%22M882%2C642.5Q785%2C785%2C642.5%2C808.5Q500%2C832%2C341%2C825Q182%2C818%2C158.5%2C659Q135%2C500%2C158.5%2C341Q182%2C182%2C341%2C123Q500%2C64%2C647.5%2C134.5Q795%2C205%2C887%2C352.5Q979%2C500%2C882%2C642.5Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E");
+  
+} */

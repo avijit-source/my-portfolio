@@ -1,0 +1,52 @@
+
+.projects {
+    padding: 40px;
+    text-align: center;
+    max-height: 500px;
+  }
+  
+  .slick-slide img {
+    margin: auto;
+    width: 95%;
+    height: 10rem;
+  }
+  .slick-dots li button:before {
+    background-color: #fefcf7;
+    height: 5px;
+    margin-top: 10px;
+    width: 5px;
+    text-indent: -9999px;
+    overflow:hidden; 
+    }
+.btn-primary{
+ margin-right: 5px;
+ margin-top: 10px;
+  background-color: #e7e9ef;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #0f0101;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding: .30rem 0.7rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness:auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .projects{
+    margin: 0 8px 0 8px;
+  }
+}
+
