@@ -65,7 +65,7 @@ function Contact() {
             setSupabaseErr("sorry could not send data")
             console.log(error);
         }else{
-            setSuccessMsgs("Successfully received 🎆 !! i will response as soon as possible")
+            setSuccessMsgs("Successfully received 🎆 !! I will respond as soon as possible")
         }
         setLoading(false)
         e.target.reset()
