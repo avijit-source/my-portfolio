@@ -27,7 +27,7 @@ function Projects() {
     }, [])
     const settings = {
         dots: true,
-        // infinite: false,
+        infinite: true,
         // speed: 500,
         mobileFirst: true,
         slidesToShow: 3,
@@ -37,7 +37,8 @@ function Projects() {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    infinite: true,
                 }
             },
             {
@@ -45,7 +46,8 @@ function Projects() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    initialSlide: 1
+                    initialSlide: 1,
+                    infinite: true,
                 }
             },
             {
@@ -73,10 +75,10 @@ function Projects() {
                                     width="320"
                                     height="500"
                                     src={val.imageurl} />
-                                <p style={{minHeight:"5.2vh",fontSize:"0.9rem",maxWidth:"95%",textAlign:"center"}}>
+                                <p style={{ minHeight: "5.2vh", fontSize: "0.9rem", maxWidth: "95%", textAlign: "center" }}>
                                     {val.description}
                                 </p>
-                                <button className="btn-primary" onClick={() => window.open(`${val.githublink}`, "_blank")}><span style={{display:"flex",justifyContent: "center",alignItems: "center"}}><AiFillGithub /> <span style={{marginLeft:"5px"}}>Github</span></span></button>
+                                <button className="btn-primary" onClick={() => window.open(`${val.githublink}`, "_blank")}><span style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><AiFillGithub /> <span style={{ marginLeft: "5px" }}>Github</span></span></button>
                             </div>
                         ))
                     }
