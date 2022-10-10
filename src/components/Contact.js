@@ -94,7 +94,7 @@ function Contact() {
                     <span style={{ color: "red", display: 'block' }}>{emailErr}</span>
                     <input name="message" type="search" placeholder="write a message" onChange={handleChange} className="inputs" />
                     <span style={{ color: "red", display: 'block' }}>{messageErr}</span>
-                    <input type="submit" value={loading === true ? "waiting..." : "Submit"} className="button-31" diabled={loading.toString()} />
+                    <input type="submit" value={loading === true ? "waiting..." : "Submit"} className="button-31" disabled={loading} />
                     <span style={{ color: "lightgreen", display: 'block' }}>{successMsgs}</span>
                     <span style={{ color: "red", display: 'block' }}>{supabaseErr}</span>
                 </form>
