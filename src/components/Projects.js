@@ -40,7 +40,7 @@ function Projects() {
                     slidesToScroll: 1,
                     speed: 500,
                     mobileFirst: true,
-                    infinite: true,
+                    infinite: false,
                 }
             },
             {
@@ -51,7 +51,7 @@ function Projects() {
                     speed: 500,
                     mobileFirst: true,
                     initialSlide: 1,
-                    infinite: true,
+                    infinite: false,
                 }
             },
             {
@@ -61,7 +61,7 @@ function Projects() {
                     slidesToScroll: 2,
                     speed: 500,
                     mobileFirst: true,
-                    infinite: true,
+                    infinite: false,
                     dots: true
                 }
             },
