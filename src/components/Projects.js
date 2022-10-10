@@ -28,8 +28,8 @@ function Projects() {
     const settings = {
         dots: true,
         infinite: true,
-        // speed: 500,
-        // mobileFirst: true,
+        speed: 500,
+        mobileFirst: true,
         slidesToShow: 3,
         slidesToScroll: 3,
         responsive: [
@@ -38,6 +38,8 @@ function Projects() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    speed: 500,
+                    mobileFirst: true,
                     infinite: true,
                 }
             },
@@ -46,6 +48,8 @@ function Projects() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    speed: 500,
+                    mobileFirst: true,
                     initialSlide: 1,
                     infinite: true,
                 }
@@ -55,6 +59,8 @@ function Projects() {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
+                    speed: 500,
+                    mobileFirst: true,
                     infinite: true,
                     dots: true
                 }
