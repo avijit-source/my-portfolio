@@ -2,13 +2,13 @@
 .projects {
     padding: 40px;
     text-align: center;
-    max-height: 500px;
+    max-height: 1000px;
   }
   
   .slick-slide img {
     margin: auto;
     width: 95%;
-    height: 12rem;
+    height: 13rem;
   }
   .slick-dots li button:before {
     background-color: #fefcf7;
