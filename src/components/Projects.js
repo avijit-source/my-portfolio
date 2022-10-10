@@ -29,7 +29,7 @@ function Projects() {
         dots: true,
         infinite: true,
         // speed: 500,
-        mobileFirst: true,
+        // mobileFirst: true,
         slidesToShow: 3,
         slidesToScroll: 3,
         responsive: [
