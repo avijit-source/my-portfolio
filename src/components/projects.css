@@ -8,7 +8,7 @@
   .slick-slide img {
     margin: auto;
     width: 95%;
-    height: 10rem;
+    height: 12rem;
   }
   .slick-dots li button:before {
     background-color: #fefcf7;
@@ -45,8 +45,11 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .projects{
-    margin: 0 8px 0 8px;
+ 
+  .slick-slide img {
+    margin: auto;
+    width: 100%;
+    height: 10rem;
   }
 }
 

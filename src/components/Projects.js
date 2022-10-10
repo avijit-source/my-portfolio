@@ -30,8 +30,8 @@ function Projects() {
         // infinite: false,
         // speed: 500,
         mobileFirst: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         responsive: [
             {
                 breakpoint: 480,
@@ -70,10 +70,10 @@ function Projects() {
                         projectsData.map(val => (
                             <div className="project" key={val.id}>
                                 <img
-                                    width="300"
-                                    height="300"
+                                    width="320"
+                                    height="500"
                                     src={val.imageurl} />
-                                <p style={{minHeight:"6vh",fontSize:"0.9rem",maxWidth:"95%",textAlign:"center"}}>
+                                <p style={{minHeight:"5.2vh",fontSize:"0.9rem",maxWidth:"95%",textAlign:"center"}}>
                                     {val.description}
                                 </p>
                                 <button className="btn-primary" onClick={() => window.open(`${val.githublink}`, "_blank")}><span style={{display:"flex",justifyContent: "center",alignItems: "center"}}><AiFillGithub /> <span style={{marginLeft:"5px"}}>Github</span></span></button>
