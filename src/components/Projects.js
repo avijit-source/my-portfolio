@@ -2,13 +2,17 @@ import React, { useEffect, useState } from 'react'
 import { AiFillGithub } from "react-icons/ai";
 import Slider from "react-slick";
 import supabase from '../config/supabaseClient';
+import Loader from './Loader';
 import "./projects.css"
+
 function Projects() {
     const [fetchErr, setFetchErr] = useState(null)
     const [projectsData, setProjectsData] = useState(null)
+    const [loading,setLoading] = useState(false)
 
     useEffect(() => {
         async function fetchData() {
+            setLoading(true)
             const { data, error } = await supabase
                 .from("projects")
                 .select()
@@ -16,10 +20,13 @@ function Projects() {
             if (error) {
                 setFetchErr("sorry could not fetch data")
                 setProjectsData(null)
+                setLoading(false)
             }
             if (data) {
                 setProjectsData(data)
                 setFetchErr(null)
+                setLoading(false)
+
             }
         }
 
@@ -67,6 +74,11 @@ function Projects() {
             },
         ]
     };
+    if(loading===true){
+        return (
+            <Loader />
+        )
+    }
     return (
         <div className="projects">
             <h2>Projects

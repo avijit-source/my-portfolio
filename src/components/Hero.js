@@ -3,14 +3,17 @@ import "./hero.css"
 import { AiFillGithub, AiOutlineContacts } from "react-icons/ai";
 import supabase from '../config/supabaseClient';
 import {FiDownload} from "react-icons/fi"
+import Loader from './Loader';
 
 function Hero() {
 
     const [fetchErr, setFetchErr] = useState(null)
     const [heroData, setHeroData] = useState(null)
+    const [loading,setLoading] = useState(false)
 
     useEffect(() => {
         async function fetchData() {
+            setLoading(true)
             const { data, error } = await supabase
                 .from("portfolio-data")
                 .select("cvLink")
@@ -19,10 +22,12 @@ function Hero() {
             if (error) {
                 setFetchErr("sorry could not fetch data")
                 setHeroData(null)
+                setLoading(false)
             }
             if (data) {
                 setHeroData(data)
                 setFetchErr(null)
+                setLoading(false)
             }
         }
 
@@ -33,6 +38,11 @@ function Hero() {
         if (next) {
             next.scrollIntoView({ behavior: 'smooth' });
         }
+    }
+    if(loading===true){
+        return (
+            <Loader />
+        )
     }
     return (
         <div className="hero">
